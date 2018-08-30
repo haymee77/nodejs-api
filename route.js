@@ -6,4 +6,8 @@ router.get('/', (req, res) => {
     res.send('hi');
 });
 
+router.get('/user/:name', (req, res) => {
+    res.json({ name: req.params.name });
+});
+
 module.exports = router;
